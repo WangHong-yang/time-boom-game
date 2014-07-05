@@ -1,0 +1,115 @@
+body {
+	background-color: #1F1F1F;
+}
+
+h1 {
+	margin-top: 100px;
+	font-size: 3rem;
+	color: #000000;
+	text-align: center;
+	font-family: 微软雅黑;
+}
+
+#music {
+	position: absolute;
+	top: 10px;
+	right: 60px;
+	width: 35px;
+	height: 33px;
+	background-image: url(../imgs/music.png);
+	cursor: pointer;
+}
+#music:hover {
+	background-image: url(../imgs/musicDown.png);
+}
+
+#sound {
+	position: absolute;
+	top: 10px;
+	right: 10px;
+	width: 32px;
+	height: 34px;
+	background-image: url(../imgs/sound.png);
+	cursor: pointer;
+}
+#sound:hover {
+	background-image: url(../imgs/soundDown.png);
+}
+
+#yellowBar {
+	position: absolute;
+	width: 100%;
+	height: 6px;
+	background-color: #FEF014;
+	top: 229px; 
+}
+
+.startPic {
+	position: absolute;
+	top: 90px;
+	left: 50%;
+	margin-left: -182px;
+}
+#startPicIn {
+	-webkit-animation-name: Mr_why_in;
+	-webkit-animation-duration: 1.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+}
+#startPicOut {
+	-webkit-animation-name: Mr_why_out;
+	-webkit-animation-duration: 1.7s;
+	-webkit-animation-timing-function: ease;
+	-webkit-animation-fill-mode: forwards;
+}
+@-webkit-keyframes Mr_why_in { 
+	0% { -webkit-transform: rotate3d(0,0,1,0); -moz-transform: rotate3d(0,0,1,0); }
+	25% { -webkit-transform: rotate3d(0,0,1,35deg); -moz-transform: rotate3d(0,0,1,35deg); }
+	65% { -webkit-transform: rotate3d(0,0,1,-30deg); -moz-transform: rotate3d(0,0,1,-30deg); }
+	100% { -webkit-transform: rotate3d(0,0,1,0); -moz-transform: rotate3d(0,0,1,0); }
+}
+@-webkit-keyframes Mr_why_out {
+	0% { -webkit-transform: rotate3d(0,0,1,0); -moz-transform: rotate3d(0,0,1,0); }
+	25% { -webkit-transform: rotate3d(0,0,1,-35deg); -moz-transform: rotate3d(0,0,1,-35deg); }
+	65% { -webkit-transform: rotate3d(0,0,1,30deg); -moz-transform: rotate3d(0,0,1,30deg); }
+	100% { -webkit-transform: rotate3d(0,0,1,0); -moz-transform: rotate3d(0,0,1,0); }
+}
+
+
+.btn {
+	display: block;
+	position: absolute;
+	width: 220px;
+	height: 50px;
+	left: 50%;
+	margin-left: -110px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#btnMode1 {
+	top: 75%;
+	background-image: url(../imgs/classicMode.png);
+}
+#btnMode1:hover {
+	background-image: url(../imgs/classicModeDown.png);
+}
+
+#btnMode2 {
+	top: 85%;
+	background-image: url(../imgs/blindMode.png);
+}
+#btnMode2:hover {
+	background-image: url(../imgs/blindModeDown.png);
+}
+
+#copyright {
+	position: absolute;
+	width: 164px;
+	bottom: 10px;
+	left: 50%;
+	margin-left: -82px;
+	color: #4B4B4B;
+	font-family: 微软雅黑;
+	font-size: 12px;
+}

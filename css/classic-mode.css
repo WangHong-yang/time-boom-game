@@ -1,0 +1,345 @@
+body {
+	background-color: #1f1f1f;
+	font-family: 华文细黑, 微软雅黑;
+}
+
+.pages {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+	-webkit-border-radius: 10px;
+	-moz-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+	margin: 50px auto;
+}
+
+h2 {
+	font-size: 2rem;
+}
+
+.btn {
+	display: block;
+	position: absolute;
+	width: 220px;
+	height: 50px;
+	left: 50%;
+	margin-left: -110px;
+	vertical-align: middle;
+	cursor: pointer;
+}
+
+#timeDot {
+	position: absolute;
+	left: 50%;
+	margin-left: -6px;
+	top: 75%;
+	margin-top: -305px;
+	z-index: 3;
+}
+#timeDot span {
+	position: absolute;
+	font-size: 1.6rem;
+	font-weight: bold;
+	color: #FEF128;
+	top: 25px;
+}
+
+#drawDot {
+	position: absolute;
+	left: 50%;
+	margin-left: -6px;
+	top: 75%;
+	margin-top: -376px;
+}
+#drawDot span {
+	position: absolute;
+	top: 61px;
+}
+
+#timePointer {
+	position: absolute;
+	left: 50%;
+	margin-left: -18px;
+	top: 75%;
+	margin-top: -350px;
+}
+
+#yellowBar1, #yellowBar4, #yellowBar5 {
+	position: absolute;
+	width: 100%;
+	height: 6px;
+	background-color: #FEF014;
+	top: 229px;
+}
+#yellowBar2 {
+	position: absolute;
+	width: 100%;
+	height: 6px;
+	background-color: #FEF014;
+	top: 75%;
+	margin-top: -308px;
+}
+#yellowBar3 {
+	position: absolute;
+	width: 100%;
+	height: 6px;
+	background-color: #FEF014;
+	top: 75%;
+	margin-top: -155px;
+}
+
+#startPic {
+	position: absolute;
+	top: 100px;
+	left: 50%;
+	margin-left: -182px;
+}
+
+#startBtn {
+	top: 75%;
+	background-image: url(../imgs/startBtn.png);
+}
+#startBtn:hover {
+	background-image: url(../imgs/startBtnDown.png);
+}
+
+
+#biaopanPic {
+	position: absolute;
+	top: 75%;
+	left: 50%;
+	margin-top: -293px;
+	margin-left: -182px;
+}
+
+#record, #record2, #record3 {
+	position: absolute;
+	text-align: center;
+	width: 245px;
+	font-family: 华文细黑, 微软雅黑;
+	font-size: 7rem;
+	color: #21222C;
+	left: 50%;
+	margin-left: -120px;
+	top: 159px;
+}
+
+#resultNewPic, #resultOldPic {
+	position: absolute;
+	top: 101px;
+	left: 50%;
+	margin-left: -182px;
+}
+
+
+#returnBtn1 {
+	display: block;
+	position: absolute;
+	width: 22px;
+	height: 34px;
+	top: 88%;
+	left: 50%;
+	margin-left: -129px;
+	background-image: url(../imgs/lBtn.png);
+}
+
+#showRecordBtn {
+	top: 50%;
+}
+
+#returnBtn2 {
+	top: 70%;
+}
+
+#tryAgainBtn {
+	top: 60%;
+}
+
+.fenshu {
+	color: #21222C;
+	font-family: 华文细黑, 微软雅黑;
+	font-size: 7em;
+}
+
+#platform p {
+	line-height: 2rem;
+}
+
+#fenshuC {
+	position: absolute;
+	text-align: center;
+	width: 250px;
+	left: 50%;
+	margin-left: -125px;
+	top: 75%;
+	margin-top: -228px;
+}
+
+#go {
+	width: 180px;
+	height: 100px;
+	position: absolute;
+	left: 50%;
+	top: 75%;
+	margin-left: -100px;
+	margin-top: -199px;
+	font-size: 90px;
+	font-weight: bolder;
+	color: #21222C;
+	background-color: #FEF014;
+	line-height: 100px !important;
+	padding-left: 20px;
+}
+
+#hoverAll {
+	/* 当暂停时起遮蔽作用，防止误操作 */
+	display: none;
+	position: absolute;
+	z-index: 4;
+	width: 100%;
+	height: 100%;
+	background-color: #1f1f1f;
+	filter:alpha(opacity=30);       /* IE */
+    -moz-opacity:0.3;              /* 老版Mozilla */
+    -khtml-opacity:0.3;              /* 老版Safari */
+    opacity: 0.3;           /* 支持opacity的浏览器*/
+}
+
+#startStopBtn {
+	position: absolute;
+	 /*最顶层*/
+	width: 100%;
+	height: 100%;
+}
+
+#startStopB {
+	display: block;
+	position: absolute;
+	z-index: 5;
+	width: 33px;
+	height: 33px;
+	top: 88%;
+	left: 50%;
+	margin-left: -140px;
+	background-image: url(../imgs/stop.png);
+	cursor: pointer;
+}
+#startStopB:hover {
+	background-image: url(../imgs/stopDown.png);
+}
+
+#innerStatStopBtn {
+	display: none;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+}
+
+.continue {
+	background-image: url(../imgs/continue.png);
+	position: absolute;
+	width: 186px;
+	height: 50px;
+	left: 50%;
+	margin-left: -93px;
+	top: 65%;
+	cursor: pointer;
+}
+.continue:hover {
+	background-image: url(../imgs/continueDown.png);
+}
+#stopContinue {
+	position: absolute;
+	z-index: 5;
+}
+#stopTryAgain {
+	position: absolute;
+	z-index: 5;
+}
+#stopReturnTop {
+	position: absolute;
+	z-index: 5;
+}
+
+#stopDownBtn {
+	position: absolute;
+	z-index: 5;
+	width: 33px;
+	height: 33px;
+	left: 50%;
+	margin-left: -140px;
+	top: 88%;
+	cursor: pointer;
+}
+
+#classic_mode_setButton {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	z-index: 3;
+	cursor: pointer;
+}
+
+.clickShare {
+	background-image: url(../imgs/clickShare.png);
+	position: absolute;
+	width: 186px;
+	height: 50px;
+	left: 50%;
+	margin-left: -93px;
+	top: 65%;
+	cursor: pointer;
+}
+.clickShare:hover {
+	background-image: url(../imgs/clickShareDown.png);
+	cursor: pointer;
+}
+
+.tryAgain {
+	background-image: url(../imgs/tryAgain.png);
+	position: absolute;
+	width: 186px;
+	height: 50px;
+	left: 50%;
+	margin-left: -93px;
+	top: 75%;
+}
+.tryAgain:hover {
+	background-image: url(../imgs/tryAgainDown.png);
+}
+
+.returnTop {
+	background-image: url(../imgs/returnTop.png);
+	position: absolute;
+	width: 186px;
+	height: 50px;
+	left: 50%;
+	margin-left: -93px;
+	top: 85%;
+}
+.returnTop:hover {
+	background-image: url(../imgs/returnTopDown.png);
+}
+
+#maxRecord1, #maxRecord2 {
+	position: absolute;
+	width: 100px;
+	left: 50%;
+	margin-left: 35px;
+	top: 302px;
+	color: #23242B;
+	font-size: 1.4rem;
+	font-weight: bolder;
+}
+
+.icon-medium-plus {
+	display: none;
+	position: absolute;
+	left: 50%;
+	top: 65%;
+	margin-left: 80px;
+	margin-top: 10px;
+	-webkit-transform: scale(0.9);
+	-moz-transform: scale(0.9);
+}
